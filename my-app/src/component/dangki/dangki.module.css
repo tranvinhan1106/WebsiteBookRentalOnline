@@ -1,0 +1,127 @@
+body {
+  background-image: url("https://th.bing.com/th/id/R.3cd197496f9184da08440010c4b60e84?rik=46UtT8lY%2bPfMIw&pid=ImgRaw&r=0");
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(10px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.pageFadeIn {
+    animation: fadeIn 0.4s ease-out; 
+}
+
+.formContainer {
+    background: rgba(255, 192, 203, 0.9);
+    border-radius: 40px;
+    padding: 40px;
+    width: 370px;
+    height: 900px;
+    box-shadow: 0 4px 20px rgba(37, 16, 16, 0.25);
+    position: relative;
+  }
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #222;
+  text-align: left; 
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="tel"] {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #aaa;
+  margin-top: 5px;
+}
+
+.gender {
+  margin-top: 10px;
+}
+
+.gender label {
+  font-weight: normal;
+  margin-right: 10px;
+}
+
+.terms {
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: left;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  background-color: #f08080;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #ff6666;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
+.login-link button {
+  background: none;
+  border: none;
+  color: #222;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0;
+}
+.login-link a {
+  color: #222;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+.login-link a {
+  color: #222;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}

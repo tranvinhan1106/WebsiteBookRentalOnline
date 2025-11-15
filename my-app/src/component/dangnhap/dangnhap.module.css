@@ -1,0 +1,153 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(10px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.pageFadeIn {
+    animation: fadeIn 0.4s ease-out; 
+}
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    height: 100vh;
+  }
+
+  .background {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  /* Form login ở giữa */
+  .login-container {
+    background: rgba(255, 192, 203, 0.9);
+    border-radius: 40px;
+    padding: 40px;
+    width: 370px;
+    height: 620px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    position: relative;
+    z-index: 2;
+  }
+
+  /* Nội dung form */
+  .login-box h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .labelLogin {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+  }
+
+  .inputLogin {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+  }
+
+  .btn-login {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #e28b8b;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 25px;
+  }
+
+  .btn-login:hover {
+    background-color: #d06f6f;
+  }
+
+  .forgot {
+    display: block;
+    text-align: right;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 13px;
+    text-decoration: none;
+  }
+
+  .social-login {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin-bottom: 20px;
+  }
+
+  .social-login button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+
+  .social-login button:hover {
+    transform: scale(1.1);
+  }
+
+  .social-login img {
+    width: 32px;
+    height: 32px;
+  }
+
+  hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #000000;
+  }
+
+  .btn-register {
+    background-color: #e28b8b;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 8px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .btn-register:hover {
+    background-color: #d06f6f;
+  }
+
+  /* Ảnh dưới cùng */
+  .bottom-image {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-height: auto;
+    object-fit: cover;
+    z-index: 1;
+    opacity: 0.8;
+  }
+  .labelVSTextBox {
+    margin-top: 50px;
+  }
