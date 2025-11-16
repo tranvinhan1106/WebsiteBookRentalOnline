@@ -29,4 +29,6 @@ public interface CustomerRepository extends JpaRepository<Customer, String> {
     @Query(value = "SELECT password FROM account WHERE account_id = :accountId", nativeQuery = true)
     String findPasswordByAccountId(@Param("accountId") int accountId);
 
+    @Query(value = "SELECT customer_id FROM Customer ORDER BY customer_id DESC LIMIT 1", nativeQuery = true)
+    String findLastCustomer();
 }

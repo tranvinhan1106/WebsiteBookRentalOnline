@@ -2,9 +2,11 @@ package com.example.e_book.controller;
 
 import com.example.e_book.dto.LoginReponse;
 import com.example.e_book.dto.LoginRequest;
+import com.example.e_book.dto.RegisterRequest;
 import com.example.e_book.entity.Account;
 import com.example.e_book.repository.AccountRepository;
 import com.example.e_book.service.account.CustomUserDetails;
+import com.example.e_book.service.auth.AuthService;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.core.Authentication;
@@ -29,6 +31,9 @@ public class AuthController {
 
     @Autowired
     private AccountRepository accountRepository;
+
+    @Autowired
+    private AuthService authService;
 
     @GetMapping("/me")
     public ResponseEntity<?> getMyInfo(){
@@ -69,5 +74,16 @@ public class AuthController {
         return ResponseEntity.ok().body(
                 new LoginReponse("fake-jwt-token" , account.getRole().name())
         );
+    }
+
+    @PostMapping("/register")
+    public ResponseEntity<?> registerUser(@RequestBody RegisterRequest registerRequest){
+        try {
+            authService.register(registerRequest);
+            return new ResponseEntity<>("Dang ki thanh cong !",HttpStatus.CREATED);
+
+        }catch (RuntimeException e){
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
+        }
     }
 }
