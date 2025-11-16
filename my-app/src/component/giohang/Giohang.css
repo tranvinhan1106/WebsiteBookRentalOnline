@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800&display=swap');
+
+body {
+    font-family: "Marcellus SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    min-width: 1030px;
+}
+
+/* Lớp bao bọc */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Nội dung chính */
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Phần thanh toán */
+.checkout {
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 455px;
+    margin-right: 455px;
+    padding: auto;
+}
+
+.checkout p {
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.checkout button {
+    background: #e57373;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.checkout button:hover {
+    background: #f44336;
+}
+
+.body-container {
+    background: #f8d7da;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-container {
+    align-items: flex-start;
+    /* Align items to the start to keep them aligned correctly */
+    display: flex;
+    width: 1500px;
+    margin: auto;
+    gap: 30px;
+}
+
+.filter-container {
+    width: 200px;
+    background: #dfdbdb;
+    padding: 15px;
+    border-radius: 10px;
+    max-height: 400px;
+}
+
+.filter-container label {
+    display: block;
+    margin-bottom: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.filter-container label:hover {
+    background-color: #bbb;
+    transform: translateX(5px);
+}
+
+.book-list {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.book-item {
+    display: flex;
+    align-items: center;
+    border: 2px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.delete-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #e57373;
+}
+
+.delete-button:hover {
+    color: #f44336;
+}
+
+.checkbox {
+    margin-right: 70px;
+    transform: scale(1.5);
+}
+
+.book-item img {
+    width: 80px;
+    height: 100px;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+.book-details {
+    flex: 1;
+}
+
+#img {
+    height: auto;
+    width: 80px;
+    margin-left: 50px;
+}
+
+#img1 {
+    height: auto;
+    width: 180px;
+}
+
+.text {
+    margin-left: 50px;
+}
+
+#TL {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* 
+#hr {
+    width: 400px;
+    margin: auto;
+} */
+
+h2 {
+    text-align: center;
+}

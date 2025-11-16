@@ -1,0 +1,94 @@
+
+.sidebar {
+    width: 25%;
+    height: 100vh;
+    background: #0b0f4b;
+    color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+.logo {
+    text-align: center;
+    background: white;
+    color: #0b0f4b;
+    width: 130px;
+    padding: 15px 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.menu {
+    width: 100%;
+    padding-left: 20px;
+}
+
+.item {
+    width: 90%;
+    background: transparent;
+    border: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin: 29px 0;
+    padding: 12px 12px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.2s;
+    text-align: left;
+    text-decoration: none;
+    
+}
+
+.item i {
+    width: 22px;
+    margin-right: 12px;
+
+}
+
+.item span {
+    font-size: 16px;
+}
+
+.item:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.ben_phai {
+  width: 75%;          
+  margin-left: 25%;      
+  background-color: white; 
+  min-height: 100vh;       
+}
+
+.dau {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+
+.left {
+  font-size: 20px;
+  margin: 0;
+}
+
+
+.right {     
+    margin-left: auto;
+    display: flex;
+    align-items: end;
+    gap: 6px;
+}
+
+.right i {
+  font-size: 18px;
+}

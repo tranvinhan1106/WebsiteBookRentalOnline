@@ -1,0 +1,330 @@
+/*Header*/
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,800&display=swap');
+
+body {
+    font-family: "Marcellus SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    min-width: 1030px;
+}
+
+.second {
+    background-color: #D0A0A0;
+    display: inline-flex;
+    width: 100%;
+    height: 50px;
+
+}
+
+.form-control {
+    background-color: #BB6161;
+    border-radius: 20px;
+    width: 500px;
+    height: 35px;
+    margin-top: 6px;
+}
+
+.search {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.search input {
+    margin: auto;
+}
+
+.search button {
+    margin-left: 5px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 20px;
+    width: 42px;
+    height: 40px;
+    opacity: 0.5;
+}
+
+.search button:hover {
+    background-color: #aa6d6d;
+    transition: all 0.3s ease;
+
+}
+
+.dropdown button {
+    margin-left: 20px;
+    align-items: center;
+}
+
+.dropdown button:hover {
+    transition: all 0.3s ease;
+    background-color: rgb(127, 152, 173);
+}
+
+/* @media (max-width: 1000px) {
+    .container ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .container ul li {
+        padding: 1px;
+        margin-top: 10px;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .container ul li a {
+        padding: 10px 0;
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+} */
+.imgHome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgHome img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dropdown {
+    margin-left: 20px;
+    padding: 5px;
+}
+
+.imgHome p {
+    position: absolute;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 50px;
+    color: white;
+    letter-spacing: 5px;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+.lineHr hr {
+    background-color: black;
+    height: 2px;
+    margin: 0 auto;
+    width: 400px;
+}
+
+h5 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.book-container {
+    display: flex;
+    justify-content: center;
+    /* Căn giữa */
+    padding: 20px;
+    /* Thêm khoảng đệm cho toàn bộ container */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* Tự động điều chỉnh số cột theo kích thước */
+    gap: 40px;
+    /* Khoảng cách giữa các sách */
+}
+
+.card {
+    border-radius: 20px;
+    border: 1px solid #f1f1f1;
+    text-align: center;
+}
+
+.card:hover {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.card-body p {
+    min-height: 20px; /* Chiều cao tối thiểu */
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.btn-heart{
+    margin-left: 140px;
+}
+
+.card-title {
+    margin-top: -90px;
+    font-size: 14px;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.text-muted {
+    font-size: 13px;
+}
+
+.fw-bold {
+    font-size: 14px;
+}
+
+.text-warning {
+    font-size: 14px;
+}
+
+#hr-header {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.inter {
+    color: #000;
+    opacity: 0.3;
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.page-item {
+    margin: 0 5px;
+}
+
+.page-link {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: cadetblue;
+}
+
+.page-link:hover {
+    background-color: #915353;
+    color: white;
+    transition: transform 0.8s ease-in-out;
+}
+
+.text-rating {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.text-rating hr {
+    width: 100px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.rating {
+    margin: 0 auto;
+    background-color: #ddd;
+    padding: 20px;
+    width: 1300px;
+    border-radius: 20px;
+    height: 550px;
+}
+
+.rating-button button {
+    border: none;
+    border-radius: 20px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    background-color: white;
+    padding: 10px;
+    width: 150px;
+}
+
+.rating-button button:hover {
+    background-color: #915353;
+    color: white;
+    transition: transform 0.8s ease-in-out;
+}
+
+.rating-book {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+.rating-book img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.book1 {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.book2 {
+    text-align: center;
+}
+
+.book3 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.rating-button .button-select {
+    background-color: #BB6161;
+}
+
+/* Chuyển động trang */
+
+.grid-container {
+    position: relative;
+}
+
+.grid-container .card {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.grid-container .card.enter {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.pagination .active a {
+    background-color: #91eca5;
+    /* Màu nền cho trang hiện tại */
+    color: white;
+    /* Màu chữ cho trang hiện tại */
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.color-body {
+    background-color: #FFEBEB;
+    padding: 40px;
+}
+
+.btn-heart {
+    border: none;
+    background-color: white;
+}
