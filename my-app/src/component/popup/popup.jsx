@@ -1,6 +1,5 @@
 import React , {useState , useEffect} from "react";
 
-// 1. NHẬN THÊM PROP "onClose"
 function Popup ({message , type ='error', duration = 3000, onClose}) {
     const [isVisible , setIsVisible] = useState(false); // Sửa: Khởi tạo là false
 
@@ -15,7 +14,6 @@ function Popup ({message , type ='error', duration = 3000, onClose}) {
         const timer = setTimeout(()=>{
             setIsVisible(false);
             
-            // 2. KHI HẾT GIỜ, GỌI HÀM "onClose" MÀ CHA (LoginPage) TRUYỀN VÀO
             if (onClose) {
                 onClose();
             }
@@ -23,12 +21,10 @@ function Popup ({message , type ='error', duration = 3000, onClose}) {
         
         return () => clearTimeout(timer);
         
-    // 3. THÊM "onClose" VÀO DEPENDENCY ARRAY
     },[message , type , duration, onClose]); 
 
     if (!isVisible) return null;
     
-    // ... (Phần style của bạn giữ nguyên, đã đúng) ...
     const style = {
         position: 'fixed', 
         top: '20px',       

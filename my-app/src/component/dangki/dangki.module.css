@@ -9,6 +9,8 @@ body {
   align-items: center;
   height: 100vh;
 }
+/* sửa ở đây , img */
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -29,7 +31,7 @@ body {
     border-radius: 40px;
     padding: 40px;
     width: 370px;
-    height: 900px;
+    height: 960px;
     box-shadow: 0 4px 20px rgba(37, 16, 16, 0.25);
     position: relative;
   }
